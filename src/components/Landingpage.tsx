@@ -7,11 +7,13 @@ import Selection from "./Selection"
 const Landingpage = () => {
   return (
     <div>
-           <NavBar />
+
+        <NavBar />
         <Section />
         <Assist />
         <Selection />
-        <Footer />
+        <Footer /> 
+        
     </div>
   )
 }

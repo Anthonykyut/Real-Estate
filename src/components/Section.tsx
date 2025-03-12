@@ -4,10 +4,10 @@ const Section = () => {
   return (
     <>
       <div className="section-container">
-        <div className="h1-container">
-          <h1>
+        <div className="text-[9rem] text-center">
+          <h1 className="text-black font-light">
             <span>WE ARE A LEADING</span> <span>REAL ESTATE</span>{" "}
-            <span>AGENCY</span>
+            <span className="font-semibold">AGENCY</span>
           </h1>
         </div>
       </div>
