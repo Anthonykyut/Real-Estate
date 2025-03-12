@@ -1,0 +1,110 @@
+/* Selection Card Container */
+.selectioncard-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: stretch;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px; /* Rounded corners for a cleaner look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease-in-out; /* Hover effect for card */
+}
+
+.selectioncard-container:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Image styling */
+.image {
+  width: 100%; /* Ensure image takes the full width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for image */
+  object-fit: cover; /* Make sure the image covers the area without distortion */
+}
+
+/* Feature Container Styling */
+.feature-container {
+  font-size: larger;
+  box-sizing: border-box;
+  width: 100%; /* Make sure it takes full width */
+  padding: 1rem 0;
+}
+
+.selectioncard-container h1 {
+  font-size: 1.5rem; /* Adjust for mobile */
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* Space between title and description */
+  color: #333; /* Darker text for readability */
+}
+
+.selectioncard-container p {
+  font-size: 1rem;
+  color: #666; /* Lighter text for description */
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Clickable Section */
+.clickable {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.clickable h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #6E00FF; /* Highlight color for the button */
+  cursor: pointer;
+}
+
+.clickable img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and smaller screens */
+@media (max-width: 1024px) {
+  .selectioncard-container h1 {
+    font-size: 1.3rem; /* Slightly smaller font size for tablets */
+  }
+
+  .selectioncard-container p {
+    font-size: 0.9rem; /* Smaller font size for descriptions */
+  }
+
+  .clickable h2 {
+    font-size: 1rem; /* Smaller font size for the book now button */
+  }
+}
+
+/* Small screens (Mobile) */
+@media (max-width: 768px) {
+  .selectioncard-container h1 {
+    font-size: 1.2rem; /* Adjust font size for mobile */
+  }
+
+  .selectioncard-container p {
+    font-size: 0.9rem; /* Slightly smaller font size for descriptions on mobile */
+  }
+
+  .clickable h2 {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .selectioncard-container h1 {
+    font-size: 1rem; /* Even smaller font size for very small screens */
+  }
+
+  .selectioncard-container p {
+    font-size: 0.8rem; /* Reduce description size for small screens */
+  }
+}

@@ -1,0 +1,124 @@
+/* Section Container */
+.section-container {
+    background-image: url('./img/image 16.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem; /* Added padding for mobile responsiveness */
+  }
+  
+  /* Headline Styling */
+  .h1-container {
+    position: absolute;
+    font-size: 1100%;
+    text-align: center;
+    color: white;
+    line-height: 1.2;
+  }
+  
+  .section-container h1 {
+    margin: 0; /* Remove default margin */
+  }
+  
+  .section-container h1 span {
+    font-weight: lighter;
+  }
+  
+  .section-container h1 span:nth-child(2) {
+    font-weight: 450;
+  }
+  
+  .section-container h1 span:nth-child(3) {
+    color: #6E00FF;
+    font-weight: 550;
+  }
+  
+  /* Footer Container */
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: larger;
+    font-weight: bold;
+    padding-block: 1rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for footer */
+    color: white;
+  }
+  
+  /* Footer Items Styling */
+  .footer-container div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .footer-container img {
+    max-width: 50px; /* Ensure images are not too large */
+    height: auto;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Tablets and smaller screens */
+  @media (max-width: 1024px) {
+    .h1-container {
+      font-size: 400%; /* Adjust font size on tablets */
+    }
+  
+    .footer-container {
+      flex-direction: column; /* Stack footer items vertically */
+      gap: 1rem;
+      text-align: center;
+    }
+  
+    .footer-container img {
+      max-width: 40px; /* Smaller icons on tablets */
+    }
+  }
+  
+  /* Small screens (Mobile) */
+  @media (max-width: 768px) {
+    .h1-container {
+      font-size: 250%; /* Smaller font size for mobile */
+    }
+  
+    .footer-container {
+      flex-direction: column; /* Stack footer items vertically */
+      gap: 0.5rem;
+      padding-block: 2rem;
+      padding-inline: 1rem;
+      text-align: center;
+    }
+  
+    .footer-container div {
+      flex-direction: column; /* Stack items vertically within each footer block */
+      align-items: center;
+    }
+  
+    .footer-container img {
+      max-width: 30px; /* Smaller icons for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .h1-container {
+      font-size: 200%; /* Even smaller font size for very small screens */
+    }
+  
+    .footer-container {
+      padding-block: 1rem;
+    }
+  
+    .footer-container img {
+      max-width: 25px; /* Even smaller icons for very small screens */
+    }
+  }
+  

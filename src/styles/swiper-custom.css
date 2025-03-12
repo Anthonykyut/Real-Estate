@@ -1,0 +1,34 @@
+/* Custom Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Change Arrow Color */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+/* Hide Swiper navigation buttons by default */
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show Swiper buttons when hovering over the card */
+.card:hover .swiper-button-next,
+.card:hover .swiper-button-prev {
+  opacity: 1;
+}
+
