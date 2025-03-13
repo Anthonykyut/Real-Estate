@@ -1,7 +1,7 @@
 
-import CardContainer from './CardContainer'
-import Footer from './Footer'
-import Header from './Header'
+import CardContainer from '../components/CardContainer'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 
 const Market = () => {
   return (
