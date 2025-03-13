@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
-
+import "swiper/swiper-bundle.css";
 import "../styles/swiper-custom.css";
 
 interface CardProps {
